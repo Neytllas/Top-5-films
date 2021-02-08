@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+              <table class="table table-hover table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>№</th>
+                    <th>Название</th>
+                    <th>Рейтинг</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-year="2010" data-director="Эдгар Райт" data-image="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/0c6d775a-f544-4367-a8d6-24ac7b81a0e6/300x450" data-description="Юный рок-музыкант готов на все ради девушки — даже сразиться с семью ее безбашенными бывшими" onclick="onRowClick(this)">
+                    <th scope="row">1</th>
+                    <td>Скотт Пилигрим против всех</td>
+                    <td>7.2</td>
+                  </tr>
+                  <tr data-year="2019" data-director="Аль Кэмпбелл, Джэми Джей Джонсон" data-image="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/2d84cd25-46d4-45ba-b10b-f7a6fd57c237/300x450" data-description="Вся жизнь — игра, а люди в ней геймеры. Комедия о фриках — соперниках онлайн и друзьях в жизни" onclick="onRowClick(this)">
+                    <th scope="row">2</th>
+                    <td>Битые пиксели</td>
+                    <td>7</td>
+                  </tr>
+                  <tr data-year="2001" data-director="Сэйдзи Мидзусима" data-image="http://animeculture.ucoz.ru/_ph/1/207183677.jpg " data-description="Многие из нас знают, что на земле существует два мира — мир живых и мир духов." onclick="onRowClick(this)">
+                    <th scope="row">3</th>
+                    <td>Король шаманов</td>
+                    <td>8.1</td>
+                  </tr>
+                  <tr data-year="2001" data-director="Дэвид Линч" data-image="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/477bd555-16ee-47aa-be90-6a252c189414/300x450" data-description="Случайная авария спасает девушку от смерти, но забирает память. Триллер Дэвида Линча о поиске собственного «я»" onclick="onRowClick(this)">
+                    <th scope="row">4</th>
+                    <td>Малхолланд Драйв</td>
+                    <td>7.6</td>
+                  </tr>
+                  <tr data-year="2001" data-director="Роман Качанов" data-image="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/97971961-c12c-4343-96ca-cda1131ce605/300x450" data-description="Самая смелая экранизация Достоевского" onclick="onRowClick(this)">
+                    <th scope="row">5</th>
+                    <td>Даун Хаус</td>
+                    <td>7.3</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <div class="shadow p-2 text-center">
+              <span id="title">Название</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        function onRowClick(row)
+        {
+          let title = document.getElementById("title")
+          title.innerText = row.dataset.title;
+        }
+        </script>
+
+      <style>
+        .table tr td:hover
+        {
+          cursor: pointer;
+        }
+      </style>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
