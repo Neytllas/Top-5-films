@@ -53,15 +53,23 @@
           <div class="col-md-4 d-flex flex-clumn">
             <div class="shadow p-2 text-center d-flex flex-column">
               <span id="title">Название</span> 
-              <img id="image" src="" alt="">
-              <tbody>
-                <td>Режисер</td>
-                <td><span id="director"></span></td>
-                <td>Год выпуска</td>
-                <td><span id="year"></span></td> 
-                <td>Описание</td>
-                <td><span id="description"></span></td>
+              <img id="image" style="height: 550px;" src="" alt="">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Режисер</th>
+                  <td><span id="director"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Год выпуска</th>
+                  <td><span id="year"></span></td> 
+                  </tr>
+                  <tr>
+                    <th>Описание</th>
+                  <td><span id="description"></span></td>
+                  </tr>
               </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -76,7 +84,7 @@
           title.innerText = row.dataset.title;
 
           let image = document.getElementById("image")
-          image.scr = row.dataset.image;
+          image.src = row.dataset.image;
 
           let director = document.getElementById("director")
           director.innerText = row.dataset.director;
